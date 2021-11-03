@@ -1,11 +1,11 @@
 import React from 'react'
 import twitter from './twitter.svg'
 
-function Item() {
+function Item(props) {
     return (
         <div>
             <img src ={twitter} alt= 'twitter' className ='product'/>
-            <h4 className='name'> Buffet industriel
+            <h4 className='name'> {props.name}
             </h4>
             <h5 className='category'> Buffet
             </h5>
