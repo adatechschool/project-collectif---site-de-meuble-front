@@ -1,9 +1,11 @@
 import React from 'react'
-import twitter from './twitter.svg'
+import cupboard from './cupboard.jfif'
+
 
 const Item = ({ info }) => 
         <div>
-            <img src ={twitter} alt= 'twitter' className ='product'/>
+
+            <img src ={cupboard} alt= 'cupboard' className ='product'/>
             <h4 className='name'> {`Nom: ${info.name}`}
             </h4>
             <h5 className='category'> {`Catégorie: ${info.username}`}
