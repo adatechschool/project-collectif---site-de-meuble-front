@@ -1,9 +1,7 @@
 import React from 'react'
-var imagesOfItems= [
-    "https://static8.depositphotos.com/1343665/821/i/600/depositphotos_8213644-stock-photo-interior-design-modern-white-furniture.jpg",
-    "https://www.nidouillet.com/wp-content/uploads/2016/08/des-meubles.jpg",
-    "https://madeinmarseille.net/actualites-marseille/2018/04/commode-meuble-vintage-metropolis-e1524585616709.jpg"
-];
+import 'bootstrap/dist/css/bootstrap.min.css'
+import BootstrapCarouselComponent from './BootstrapCarouselComponent.js'
+
 
 
 class ModalDescription extends React.Component {
@@ -49,30 +47,11 @@ class ModalDescription extends React.Component {
               <div className='sub-wrapper-top'>
                 <div className='photo_description'>
 
-                    <div className="slideshow_container">
-                        <div className="mySlideFade">
-                            <img alt="image" src = {imagesOfItems[0]}></img>
-                        </div>
-                        <div className="mySlideFade">
-                        <img alt="image" src = {imagesOfItems[1]}></img>
-
-                        </div>
-                        <div className="mySlideFade">
-                        <img alt="image" src = {imagesOfItems[2]}></img>
-
-                        </div>
-                        <a className="prev" onClick="plusSlides(-1)">&#10094;</a>
-                        <a className="next" onClick="plusSlides(1)">&#10095;</a>
-
-                    </div>
-
-                   
+                  <BootstrapCarouselComponent />
                   {/* <img
-
                     alt='image_produit'
                     className='image_description'
                     src={imagesOfItems}
-
                   ></img> */}
                 </div>
                 <div className='info_description'>
