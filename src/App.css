@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.col {
+  padding: 1rem;
+  background-color: #33b5e5;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 500px;
+  }
+
+  /* #col1{
+    text-align: left;
+    position: relative;
+  }
+  #col2{
+    text-align: right;
+    position: relative;
+  } */
+
+  .rowItem{
+    width:auto;
+    height: auto;
+    padding: 1rem;
+    border: 2px solid #fff;
+  }
