@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Main from './Main.js';
 import Modal from './Modal.js';
 import { useState } from 'react';
+import ModalDescription from './Modal_description.js'
 
 
 
@@ -17,7 +18,8 @@ const [show, setShow] = useState(false);
     <Footer />
     <Main />
     <button onClick={() => setShow(true) }>Show Modal</button>
-    <Modal onClose={() => setShow(false)} show={show} />
+    {/* <Modal onClose={() => setShow(false)} show={show} /> */}
+    <ModalDescription onClose={() => setShow(false)} show={show} />
     </div>
   );
 }
