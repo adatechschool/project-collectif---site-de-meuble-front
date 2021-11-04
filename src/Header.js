@@ -12,6 +12,7 @@ function Header () {
             </h1>
             <nav>
             <img src ={panier} alt= 'panier' className ='logo'/>
+            
             <img src ={download} alt= 'profil' className ='logo'/>
             </nav>
         </div>
