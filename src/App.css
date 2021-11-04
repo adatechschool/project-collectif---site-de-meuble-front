@@ -64,10 +64,14 @@ padding: 10px;
   border-bottom: 1px solid #eee;
 }
 
-/* button{
+.button_description{
   display: flex;
-  align-items: left;
-} */
+  flex-direction: flex-end;
+}
+
+.modal_description_header{
+  display: flex;
+}
 
 .wrapper_description {
   display:flex;
@@ -84,14 +88,18 @@ padding: 10px;
 
 } */
 .photo_description {
-  width: 300px;
+  width: 600px;
 }
 
 .info_description{
-
+  width: 300px;
 }
 
 .details_description{
-
+  height: 100px;
 }
 
+.image_description{
+  width: 500px;
+  height: auto;
+}
