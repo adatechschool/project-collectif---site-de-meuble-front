@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 var imagesOfItems= [
     "https://static8.depositphotos.com/1343665/821/i/600/depositphotos_8213644-stock-photo-interior-design-modern-white-furniture.jpg",
@@ -14,9 +14,7 @@ class BootstrapCarouselComponent extends React.Component {
           <div>
               <div className='container-fluid' >
                   <div className="row">
-                      <div className="col-sm-12">
-                          <h3>React Bootstrap Carousel</h3>
-                      </div>
+                      
                   </div>
                   <div className="row">
                       <div className="col-12">

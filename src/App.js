@@ -15,11 +15,11 @@ const [show, setShow] = useState(false);
   return (
     <div className="App">
     <Header />
-    <Footer />
     <Main />
     <button onClick={() => setShow(true) }>Show Modal</button>
     {/* <Modal onClose={() => setShow(false)} show={show} /> */}
     <ModalDescription onClose={() => setShow(false)} show={show} />
+    <Footer />
     </div>
   );
 }

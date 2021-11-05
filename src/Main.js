@@ -23,7 +23,6 @@ class Main extends React.Component {
 
     return (
       <div>
-        <h1>Anciens meuble pour une nouvelle vie</h1>
         <div className='container'>
           <div className='column_items' id='column_1'>
             {listOfItems.map(item => {

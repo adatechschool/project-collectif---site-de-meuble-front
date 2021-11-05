@@ -1,5 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
 .App {
   text-align: center;
+  background-color: #F5E8C7;
 }
 
 .App-logo {
@@ -17,7 +26,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -36,6 +45,62 @@
     transform: rotate(360deg);
   }
 }
+
+.marque h1{
+  font-weight: 900;
+  font-size: 70px;
+  letter-spacing: -6px;
+  padding-right: 30px;
+}
+img.logo{
+  width: 70px;
+  height: 70px;
+  
+}
+
+.headerApp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background-color: #9E7777;
+  /* position: fixed;
+  z-index: 1; */
+  
+  
+}
+
+.marque{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-right: 10vh; */
+  
+}
+img.logoAF{
+  width: 200px;
+  /* padding-left: 10px; */
+  
+}
+
+.menu{
+  margin-right: 20px;
+ 
+}
+.menu nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20vh;
+  
+  border: #282c34 2px solid;
+  
+}
+
 
 .modal_description{
   position: fixed;
@@ -102,4 +167,12 @@ padding: 10px;
 .image_description{
   width: 500px;
   height: auto;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9E7777;
 }

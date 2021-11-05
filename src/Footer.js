@@ -5,7 +5,7 @@ import facebook from './facebook.svg'
 
 function Footer () {
     return (
-        <div>
+        <footer>
                 <a href="https://instagram.com" target="_blank">
                   <p>
                   Contact  
@@ -16,23 +16,23 @@ function Footer () {
                   A propos  
                 </p>
                 </a>
-                <a href="https://instagram.com" target="_blank"></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer"></a>
                 <p>
                   Livraison  
                 </p>
                 <p>
-                  Reseax sociaux  
+                  Réseaux sociaux  
                 </p>         
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" rel="noreferrer">
                   <img src ={twitter} alt= 'twitter' className ='logo'/>
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">
                   <img src ={instagram} alt= 'instagram' className ='logo'/>
                 </a>
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <img src ={facebook} alt= 'facebook' className ='logo'/>
                 </a>
-        </div>
+        </footer>
     )
 }
 

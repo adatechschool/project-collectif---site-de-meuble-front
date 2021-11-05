@@ -1,25 +1,29 @@
 import React from 'react'
-import logo from './logo.png'
-import download from './download.jfif'
-import panier from './panier.png'
+import logo from './images/LogoMarque.png'
+import account from './images/account.png'
+import panier from './images/iconBasket.png'
 
 function Header () {
     return (
-        <div>
+        <div className="headerApp">
+            <div className="marque">
             <a href="" target="_blank">
-            <img src={logo} alt= 'logo' className ='logo' />
+                <img src={logo} alt= 'logo' className ='logoAF' />
             </a>
             <h1>
-                Magasin meuble
+                ADOPT A FUR(NITURE)
             </h1>
+            </div>
+            <div className="menu">
             <nav>
-            <a href="" target="_blank">
-            <img src ={panier} alt= 'panier' className ='logo'/>
-            </a>
-            <a href="" target="_blank">
-            <img src ={download} alt= 'profil' className ='logo'/>
-            </a>
+                <a href="" target="_blank">
+                    <img src ={panier} alt= 'panier' className ='logo'/>
+                </a>
+                <a href="" target="_blank">
+                    <img src ={account} alt= 'profil' className ='logo'/>
+                </a>
             </nav>
+            </div>
         </div>
     )
 }
