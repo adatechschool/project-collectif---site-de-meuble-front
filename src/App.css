@@ -8,7 +8,7 @@
 
 .App {
   text-align: center;
-  background-color: #F5E8C7;
+  background-color: #eeebdd;
 }
 
 .App-logo {
@@ -46,30 +46,6 @@
   }
 }
 
-.col {
-  padding: 1rem;
-  background-color: #33b5e5;
-  border: 2px solid #fff;
-  color: #fff;
-  width: 500px;
-  }
-
-  /* #col1{
-    text-align: left;
-    position: relative;
-  }
-  #col2{
-    text-align: right;
-    position: relative;
-  } */
-
-  .rowItem{
-    width:auto;
-    height: auto;
-    padding: 1rem;
-    border: 2px solid #fff;
-  }
-
   .marque h1{
   font-weight: 900;
   font-size: 70px;
@@ -83,13 +59,15 @@ img.logo{
 }
 
 .headerApp{
+  color: #eeebdd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 30vh;
   width: 100%;
-  background-color: #9E7777;
+  background-color:rgba(99, 0, 0, 0.7);
+  
   /* position: fixed;
   z-index: 1; */
   
@@ -125,6 +103,41 @@ img.logoAF{
   
 }
 
+.container{
+margin-top: 30px;
+
+}
+
+.row{
+  margin-top: 10px;
+}
+
+/* colonne items */
+.col {
+  margin: 10px 5px 5px 5px;
+  padding: 1rem;
+  background-color: #d8b6a4;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  width: 500px;
+  }
+
+  .rowItem{
+    width:auto;
+    height: auto;
+    padding: 1rem;
+    border: 2px solid #fff;
+  }
+
+
+
+
+
+
+
+
+  /* modal description */
 
 .modal_description{
   position: fixed;

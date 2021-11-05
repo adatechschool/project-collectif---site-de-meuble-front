@@ -43,7 +43,6 @@ class Main extends React.Component {
     return (
       
       <div>
-        <h1>Anciens meubles pour une nouvelle vie</h1>
         <div className="container">
             <div className="colItems">
             {listOfItems.map((item, index) => {
