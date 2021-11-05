@@ -54,6 +54,7 @@ class Main extends React.Component {
                   return <ItemRow array ={[item] }  />
                 }
               }
+
             })}
             </div>
   

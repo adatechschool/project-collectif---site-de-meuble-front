@@ -5,23 +5,34 @@ import facebook from './facebook.svg'
 
 function Footer () {
     return (
-        <div>
-                <p>
+        <footer>
+                <a href="https://instagram.com" target="_blank">
+                  <p>
                   Contact  
-                </p>   
+                </p>
+                </a>
+                <a href="https://instagram.com" target="_blank">
                 <p>
                   A propos  
                 </p>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer"></a>
                 <p>
                   Livraison  
                 </p>
                 <p>
-                  Reseax sociaux  
+                  Réseaux sociaux  
                 </p>         
-            <img src ={twitter} alt= 'twitter' className ='logo'/>
-            <img src ={instagram} alt= 'instagram' className ='logo'/>
-            <img src ={facebook} alt= 'facebook' className ='logo'/>
-        </div>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                  <img src ={twitter} alt= 'twitter' className ='logo'/>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                  <img src ={instagram} alt= 'instagram' className ='logo'/>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                <img src ={facebook} alt= 'facebook' className ='logo'/>
+                </a>
+        </footer>
     )
 }
 

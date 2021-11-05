@@ -1,5 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
 .App {
   text-align: center;
+  background-color: #F5E8C7;
 }
 
 .App-logo {
@@ -17,7 +26,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -60,3 +69,134 @@
     padding: 1rem;
     border: 2px solid #fff;
   }
+
+  .marque h1{
+  font-weight: 900;
+  font-size: 70px;
+  letter-spacing: -6px;
+  padding-right: 30px;
+}
+img.logo{
+  width: 70px;
+  height: 70px;
+  
+}
+
+.headerApp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background-color: #9E7777;
+  /* position: fixed;
+  z-index: 1; */
+  
+  
+}
+
+.marque{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-right: 10vh; */
+  
+}
+img.logoAF{
+  width: 200px;
+  /* padding-left: 10px; */
+  
+}
+
+.menu{
+  margin-right: 20px;
+ 
+}
+.menu nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20vh;
+  
+  border: #282c34 2px solid;
+  
+}
+
+
+.modal_description{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_description_content {
+  width: 900px;
+  background-color: white;
+}
+
+.modal_description_header, .modal_description_footer{
+padding: 10px;
+}
+
+.modal_description_body{
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.button_description{
+  display: flex;
+  flex-direction: flex-end;
+}
+
+.modal_description_header{
+  display: flex;
+}
+
+.wrapper_description {
+  display:flex;
+  flex-direction: column;
+}
+
+.sub-wrapper-top{
+  display:flex;
+  align-items: row;
+  flex-direction: flex-start;
+}
+
+/* .sub-wrapper-bottom{
+
+} */
+.photo_description {
+  width: 600px;
+}
+
+.info_description{
+  width: 300px;
+}
+
+.details_description{
+  height: 100px;
+}
+
+.image_description{
+  width: 500px;
+  height: auto;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9E7777;
+}

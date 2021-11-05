@@ -16,4 +16,5 @@ const Item = ({ info }) => (
   </div>
 )
 
+
 export default Item
