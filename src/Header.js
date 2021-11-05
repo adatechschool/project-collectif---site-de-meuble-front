@@ -3,6 +3,9 @@ import logo from './images/LogoMarque.png'
 import account from './images/account.png'
 import panier from './images/iconBasket.png'
 
+
+
+
 function Header () {
     return (
         <div className="headerApp">
@@ -16,12 +19,11 @@ function Header () {
             </div>
             <div className="menu">
             <nav>
-                <a href="" target="_blank">
-                    <img src ={panier} alt= 'panier' className ='logo'/>
-                </a>
-                <a href="" target="_blank">
-                    <img src ={account} alt= 'profil' className ='logo'/>
-                </a>
+
+            <img src ={panier} alt= 'panier' className ='logo'/>
+            <a href="/Login">
+            <img src ={download} alt= 'profil' className ='logo'/>
+            </a>
             </nav>
             </div>
         </div>
