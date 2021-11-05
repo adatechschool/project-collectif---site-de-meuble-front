@@ -22,7 +22,7 @@ function Header () {
 
             <img src ={panier} alt= 'panier' className ='logo'/>
             <a href="/Login">
-            <img src ={download} alt= 'profil' className ='logo'/>
+            <img src ={account} alt= 'profil' className ='logo'/>
             </a>
             </nav>
             </div>
