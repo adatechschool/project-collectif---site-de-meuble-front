@@ -1,10 +1,10 @@
-
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./App.css";
 import "./Login.css";
 
+// Uniquement la structure - relié à aucune BDD évidemment 😃
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,8 +42,10 @@ function Login() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
-        
-        <h6>Vous n'avez pas de compte, <a href="/Inscription" >inscrivez vous</a></h6>
+
+        <h6>
+          Vous n'avez pas de compte, <a href="/Inscription">inscrivez vous</a>
+        </h6>
       </Form>
     </div>
   );

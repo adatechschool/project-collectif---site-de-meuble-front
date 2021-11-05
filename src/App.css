@@ -1,10 +1,9 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
-
+/* CSS de base react --- ne pas toucher (ça crée des conflits avec notre CSS) */
 
 .App {
   text-align: center;
@@ -46,19 +45,19 @@
   }
 }
 
-  .marque h1{
+/* Header */
+.marque h1 {
   font-weight: 900;
   font-size: 70px;
   letter-spacing: -6px;
   padding-right: 30px;
 }
-img.logo{
+img.logo {
   width: 70px;
   height: 70px;
-  
 }
 
-.headerApp{
+.headerApp {
   color: #eeebdd;
   display: flex;
   flex-direction: row;
@@ -66,49 +65,39 @@ img.logo{
   align-items: center;
   height: 30vh;
   width: 100%;
-  background-color:rgba(99, 0, 0, 0.7);
-  
-  /* position: fixed;
-  z-index: 1; */
-  
-  
+  background-color: rgba(99, 0, 0, 0.7);
 }
 
-.marque{
+.marque {
   width: 80vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* padding-right: 10vh; */
-  
-}
-img.logoAF{
-  width: 200px;
-  /* padding-left: 10px; */
-  
 }
 
-.menu{
-  margin-right: 20px;
- 
+img.logoAF {
+  width: 200px;
 }
-.menu nav{
+
+.menu {
+  margin-right: 20px;
+}
+
+.menu nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-right: 20vh;
-  
   border: #282c34 2px solid;
-  
 }
 
-.container{
-margin-top: 30px;
-
+/* page accueil - items rows */
+.container {
+  margin-top: 30px;
 }
 
-.row{
+.row {
   margin-top: 10px;
 }
 
@@ -121,31 +110,24 @@ margin-top: 30px;
   border-radius: 10px;
   color: #fff;
   width: 500px;
-  }
+}
 
-  .rowItem{
-    width:auto;
-    height: auto;
-    padding: 1rem;
-    border: 2px solid #fff;
-  }
+.rowItem {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  border: 2px solid #fff;
+}
 
+/* modal description */
 
-
-
-
-
-
-
-  /* modal description */
-
-.modal_description{
+.modal_description {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,60 +138,65 @@ margin-top: 30px;
   background-color: white;
 }
 
-.modal_description_header, .modal_description_footer{
-padding: 10px;
+.modal_description_header,
+.modal_description_footer {
+  padding: 10px;
 }
 
-.modal_description_body{
+.modal_description_body {
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 
-.button_description{
+.button_description {
   display: flex;
   flex-direction: flex-end;
 }
 
-.modal_description_header{
+.modal_description_header {
   display: flex;
 }
 
 .wrapper_description {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.sub-wrapper-top{
-  display:flex;
+.sub-wrapper-top {
+  display: flex;
   align-items: row;
   flex-direction: flex-start;
 }
 
-/* .sub-wrapper-bottom{
-
-} */
 .photo_description {
   width: 600px;
 }
 
-.info_description{
+.info_description {
   width: 300px;
 }
 
-.details_description{
+.details_description {
   height: 100px;
 }
 
-.image_description{
+.image_description {
   width: 500px;
   height: auto;
 }
 
-footer{
+/* footer in progress */
+footer {
+  height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #9E7777;
+  background-color: #9e7777;
+  text-decoration: none;
+}
+/* Pas marché: faire disparaitre le soulignement des liens */
+.liens{
+  text-decoration: none;
 }

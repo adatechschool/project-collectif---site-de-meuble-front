@@ -1,68 +1,60 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import BootstrapCarouselComponent from './BootstrapCarouselComponent.js'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import BootstrapCarouselComponent from "./BootstrapCarouselComponent.js";
 
-
+// Page description de chaque item / A relier à l'API et à l'Item concerné sur la page accueil
 
 class ModalDescription extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-      Item: []
-    }
+      Item: [],
+    };
   }
 
-  componentDidMount () {
-    fetch('https://jsonplaceholder.typicode.com/photos/5')
-      .then(response => response.json())
-      .then(json => {
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/photos/5")
+      .then((response) => response.json())
+      .then((json) => {
         this.setState({
-          Item: json
-        })
-      })         
-          
-    }
-     
-      
-    render () {
+          Item: json,
+        });
+      });
+  }
+
+  render() {
     if (!this.props.show) {
-      return null
+      return null;
     }
-    const { Item } = this.state
-    console.log(Item)
+    const { Item } = this.state;
+    console.log(Item);
 
     return (
-      <div className='modal_description' onClick={this.props.onClose}>
+      <div className="modal_description" onClick={this.props.onClose}>
         <div
-          className='modal_description_content'
-          onClick={e => e.stopPropagation()}
+          className="modal_description_content"
+          onClick={(e) => e.stopPropagation()}
         >
-          <div className='modal_description_header'>
-            <button onClick={this.props.onClose} className='button-description'>
+          <div className="modal_description_header">
+            <button onClick={this.props.onClose} className="button-description">
               X
             </button>
           </div>
-          <div className='modal_description_body'>
-            <div className='wrapper_description'>
-              <div className='sub-wrapper-top'>
-                <div className='photo_description'>
-
+          <div className="modal_description_body">
+            <div className="wrapper_description">
+              <div className="sub-wrapper-top">
+                <div className="photo_description">
                   <BootstrapCarouselComponent />
-                  {/* <img
-                    alt='image_produit'
-                    className='image_description'
-                    src={imagesOfItems}
-                  ></img> */}
                 </div>
-                <div className='info_description'>
+                <div className="info_description">
                   <h3>{Item.title}</h3>
-                  <button className='button_description_basket'>
+                  <button className="button_description_basket">
                     Ajouter au panier
                   </button>
                 </div>
               </div>
-              <div className='sub-wrapper-bottom'>
-                <div className='details_description'>
+              <div className="sub-wrapper-bottom">
+                <div className="details_description">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -79,11 +71,11 @@ class ModalDescription extends React.Component {
               </div>
             </div>
           </div>
-          <div className='modal_description_footer'></div>
+          <div className="modal_description_footer"></div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default ModalDescription
+export default ModalDescription;

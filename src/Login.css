@@ -1,43 +1,37 @@
-.Login{
-    background-color: #eeebdd;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    height: 400px;
-    width: 400px;
-    margin-top: 100px;
-    margin-left: 140px;
-    border-radius: 20px;
-    display: flex;
-    margin-right: 0;
+.Login {
+  background-color: #eeebdd;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 140px;
+  border-radius: 20px;
+  display: flex;
+  margin-right: 0;
 }
 
-.form{
-    width: 400px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.form {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.form-label{
-    color: #630000;
-    font-weight: bold;
-    margin-top: 10px;
+.form-label {
+  color: #630000;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.button{
-    background-color: rgba(99, 0, 0, 0.7);
+.button {
+  background-color: rgba(99, 0, 0, 0.7);
 }
 
-/* .btn-lg{
-    color: #630000;
-    font-weight: bold;
-    margin-top: 10px;
-} */
-
-h6{
-    color: #630000;
-    font-weight: bold;
-    padding-top: 30px;
+h6 {
+  color: #630000;
+  font-weight: bold;
+  padding-top: 30px;
 }
