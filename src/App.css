@@ -200,3 +200,21 @@ footer{
   align-items: center;
   background-color: #9E7777;
 }
+
+img.admin{
+  width: 20px;
+  height: 20px;
+  
+}
+.infoAdminItem{
+  width: 100px;
+  height: 40px;
+}
+
+
+.tableau{
+  width: 500px;
+  height: 40px;
+  
+  
+}

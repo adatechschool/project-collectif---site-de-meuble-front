@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import Login from './Login';
 import Inscription from './Inscription'
+import Admin from './Admin';
+import ModalDescription from './Modal_description';
 
 
 const Index = () => {
@@ -14,6 +16,8 @@ const Index = () => {
         <Route path='/' element={<App />}/>
         <Route path='/Login' element={<Login />}/>
         <Route path='/Inscription' element={<Inscription />} />
+        <Route path='/Admin' element={<Admin />} />
+        <Route path='/ModalDescription' element={<ModalDescription />} />
       </Routes>
     </Router>
   );

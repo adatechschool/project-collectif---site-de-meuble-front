@@ -24,35 +24,41 @@ class Inscription extends React.Component {
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
-            <div>
+          <div>
             <h2>Inscrivez vous</h2>
-          <label>
-            Nom <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <br></br>
-            <br></br>
-            Prénom
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <br></br>
-            <br></br>
-            E-mail
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <br></br>
-            <br></br>
-            Mot de passe 
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <br></br>
-            <br></br>
-            Adresse postale 
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <br></br>
-            <br></br>
-            Ville
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <br></br>
-            <br></br>
-            Téléphone
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
+            
+              <div>
+              <label>
+              Nom <input type="text" value={this.state.value} onChange={this.handleChange} />
+              </label>
+              </div>
+              
+              <label>
+              <br></br>
+              <br></br>
+              Prénom
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              <br></br>
+              <br></br>
+              E-mail
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              <br></br>
+              <br></br>
+              Mot de passe 
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              <br></br>
+              <br></br>
+              Adresse postale 
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              <br></br>
+              <br></br>
+              Ville
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              <br></br>
+              <br></br>
+              Téléphone
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+            </label>
           </div>
           <br></br>
           <input type="submit" value="Envoyer" />

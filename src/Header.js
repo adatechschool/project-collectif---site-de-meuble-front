@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './images/LogoMarque.png'
 import account from './images/account.png'
 import panier from './images/iconBasket.png'
+import admin from './images/admin.jpg'
 
 
 
@@ -23,6 +24,9 @@ function Header () {
             <img src ={panier} alt= 'panier' className ='logo'/>
             <a href="/Login">
             <img src ={account} alt= 'profil' className ='logo'/>
+            </a>
+            <a href="/Admin">
+                <img src={admin} alt= 'admin' className='logo'/>
             </a>
             </nav>
             </div>
