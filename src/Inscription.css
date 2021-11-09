@@ -1,0 +1,57 @@
+#root{
+    display: flex;
+    
+}
+
+.Inscription {
+    background-color: #eeebdd;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    padding: 10px;
+}
+
+.form-label, h2 {
+    display: flex;
+    flex-direction: column;
+    color: #630000;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+.button{
+    display: flex;
+    flex-direction: flex-end;
+    background-color: #880606;
+    color: #eeebdd;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 6px;
+    margin-top: 540px;
+}
+
