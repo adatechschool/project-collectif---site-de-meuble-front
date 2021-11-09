@@ -12,14 +12,17 @@ class Main extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((json) => {
+    fetch("http://localhost:4000/produit", {}).then((response) => {
+      console.log(response);
+      response.json().then((json) => {
+        console.log(json);
         this.setState({
           listOfItems: json,
         });
       });
+    });
   }
+
   render() {
     let { listOfItems } = this.state;
 
