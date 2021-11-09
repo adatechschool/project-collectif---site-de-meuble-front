@@ -2,11 +2,14 @@ import React from "react";
 import twitter from "./images/twitter.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { useState } from "react";
+import ModalDescription from "./Modal_description.js";
 // A relier à votre API
 // Créer le bouton qui relie à Modal_description.js
+function Item({info}) {
+  const [show, setShow] = useState(false);
 
-const Item = ({ info }) => (
+return (
   <div>
     <img src={twitter} alt="twitter" className="product" />
     <h4 className="name"> {`Nom: ${info.nomproduit}`}</h4>
@@ -15,7 +18,10 @@ const Item = ({ info }) => (
     <button type="button" className="button_item">
       Acheter
     </button>
+    <button onClick={() => setShow(true)}>Modal</button>
+      <ModalDescription onClose={() => setShow(false)} show={show} />
   </div>
 );
+}
 
 export default Item;

@@ -136,6 +136,7 @@ img.logoAF {
 .modal_description_content {
   width: 900px;
   background-color: white;
+  color: black;
 }
 
 .modal_description_header,
