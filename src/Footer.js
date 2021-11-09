@@ -16,10 +16,11 @@ function Footer () {
                   A propos  
                 </p>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noreferrer"></a>
+                <a href="https://instagram.com" target="_blank" >
                 <p>
                   Livraison  
                 </p>
+                </a>
                 <p>
                   Réseaux sociaux  
                 </p>         
