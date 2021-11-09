@@ -47,14 +47,14 @@ class ModalDescription extends React.Component {
                   <BootstrapCarouselComponent />
                 </div>
                 <div className="info_description">
-                  <h3>{Item.title}</h3>
+                /////  <h3>{Item.title}</h3> /////
                   <button className="button_description_basket">
                     Ajouter au panier
                   </button>
                 </div>
               </div>
               <div className="sub-wrapper-bottom">
-                <div className="details_description">
+          /////<div className="details_description">/////
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's

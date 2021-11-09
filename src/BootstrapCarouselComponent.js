@@ -24,7 +24,7 @@ class BootstrapCarouselComponent extends React.Component {
                     alt="First slide"
                   />
                   <Carousel.Caption>
-                    <h3>Nom du meuble</h3>
+                /////    <h3>Nom du meuble</h3>
                   </Carousel.Caption>
                 </Carousel.Item>
 
@@ -36,7 +36,7 @@ class BootstrapCarouselComponent extends React.Component {
                   />
 
                   <Carousel.Caption>
-                    <h3>Nom du meuble</h3>
+                /////    <h3>Nom du meuble</h3>
                   </Carousel.Caption>
                 </Carousel.Item>
 
@@ -47,7 +47,7 @@ class BootstrapCarouselComponent extends React.Component {
                     alt="Third slide"
                   />
                   <Carousel.Caption>
-                    <h3>Nom du meuble</h3>
+                /////    <h3>Nom du meuble</h3>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>

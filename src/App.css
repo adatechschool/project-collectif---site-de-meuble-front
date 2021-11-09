@@ -201,3 +201,15 @@ footer {
 .liens{
   text-decoration: none;
 }
+.photo {
+  height: 150px;
+  width: auto;
+  border: 2px solid rgba(240, 162, 162, 0.7);
+  border-radius: 10px;
+}
+.button_style {
+  margin: 4px;
+  border: 3px solid rgba(99, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 4px;
+}
