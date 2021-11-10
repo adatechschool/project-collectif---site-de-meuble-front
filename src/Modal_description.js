@@ -1,4 +1,5 @@
 import React from "react";
+import "./Modal_description.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapCarouselComponent from "./BootstrapCarouselComponent.js";
 
@@ -8,27 +9,18 @@ class ModalDescription extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Item: [],
+      nomproduit: this.props.nomproduit,
+      libelle_categorie: this.props.libelle_categorie,
+      prix: this.props.prix,
+      photo: this.props.photo,
     };
-  }
-
-  componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/photos/5")
-      .then((response) => response.json())
-      .then((json) => {
-        this.setState({
-          Item: json,
-        });
-      });
+    console.log("1-------------");
   }
 
   render() {
     if (!this.props.show) {
       return null;
     }
-    const { Item } = this.state;
-    console.log(Item);
-
     return (
       <div className="modal_description" onClick={this.props.onClose}>
         <div
@@ -44,29 +36,21 @@ class ModalDescription extends React.Component {
             <div className="wrapper_description">
               <div className="sub-wrapper-top">
                 <div className="photo_description">
-                  <BootstrapCarouselComponent />
+                  <img class="image-produit" src={this.state.photo} />
+                  {/*<BootstrapCarouselComponent /> */}
                 </div>
                 <div className="info_description">
-                /////  <h3>{Item.title}</h3> /////
+                  <h3>{this.state.nomproduit}</h3>
+                  <h3>{this.state.libelle_categorie}</h3>
+                  <h3>{this.state.prix} €</h3>
                   <button className="button_description_basket">
                     Ajouter au panier
                   </button>
                 </div>
               </div>
               <div className="sub-wrapper-bottom">
-          /////<div className="details_description">/////
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
+                <div className="details_description">
+                  <p></p>
                 </div>
               </div>
             </div>
